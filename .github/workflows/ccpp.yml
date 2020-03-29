@@ -17,11 +17,9 @@ jobs:
       run: uname -a
     - name: test
       run: pwd
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: My first step
+      uses: docker://alpine:3.8
+    - name: test
+      run: uname -a
+    - name: test
+      run: pwd
