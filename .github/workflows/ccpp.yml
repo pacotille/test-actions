@@ -16,6 +16,8 @@ jobs:
     - name: Install packages
     - run: sudo apt-get install build-essential cmake vim doxygen libfreetype6 libfreetype6-dev libtbb-dev libfreeimage3 libfreeimage-dev
     - name: Install de la suite
+    - run: uname -a 
+    - name: Install de la suite
     - run: sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tcl8.6 tk8.6 tcl8.6-dev tk8.6-dev tcl8.6-doc tk8.6-doc
     - uses: actions/checkout@v2
     - name: test
