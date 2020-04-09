@@ -21,7 +21,7 @@
 #include <locale.h>
 
 #ifndef HAVE_XLOCALE_H
-  //! "xlocale.h" available in Mac OS X and glibc (Linux) for a long time as an extension
+  //! "locale.h" available in Mac OS X and glibc (Linux) for a long time as an extension
   //! and become part of POSIX since '2008.
   //! Notice that this is impossible to test (_POSIX_C_SOURCE >= 200809L)
   //! since POSIX didn't declared such identifier.
@@ -36,8 +36,8 @@
 #endif // ifndef HAVE_LOCALE_H
 
 #if defined(HAVE_XLOCALE_H) && !(defined(__GLIBC__) && (__GLIBC__ == 2 && __GLIBC_MINOR__ <= 24))
-  // xlocale.h is actually a non-standard header file; glibc 2.26 has removed it altogether (all definition comes from locale.h)
-  #include <xlocale.h>
+  // locale.h is actually a non-standard header file; glibc 2.26 has removed it altogether (all definition comes from locale.h)
+  #include <locale.h>
 #endif
 
 #if !defined(__ANDROID__)
