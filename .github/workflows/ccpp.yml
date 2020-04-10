@@ -25,7 +25,7 @@ jobs:
     - name: Position
       run: pwd && ls -lisa 
     - name: SetUp  
-      run: cd ./opencascade-7.2.0/build/ && cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug .. && make -j2 install
+      run: cd /home/runner/work/test-actions/test-actions/opencascade-7.2.0/build && cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug .. && make -j2 install
 #    - uses: actions/checkout@v2
 #    - name: test
 #      run: uname -a
