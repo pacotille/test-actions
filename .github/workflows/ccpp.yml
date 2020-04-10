@@ -19,8 +19,8 @@ jobs:
       run: sudo apt-get install build-essential cmake vim doxygen libfreetype6 libfreetype6-dev libtbb-dev libfreeimage3 libfreeimage-dev libxmu-dev libxi-dev
     - name: Install de la suite
       run: sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tcl8.6 tk8.6 tcl8.6-dev tk8.6-dev tcl8.6-doc tk8.6-doc
-#    - name: Encore la suite
-#      run: sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libvtk6.3 libvtk6-dev
+    - name: Encore la suite
+      run: sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libvtk6.3 libvtk6-dev
     - uses: actions/checkout@v2
     - name: Position
       run: pwd && ls -lisa 
