@@ -22,7 +22,7 @@ jobs:
 #    - name: Encore la suite
 #      run: sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libvtk6.3 libvtk6-dev
     - name: Position
-      run pwd && ls -lisa  
+      run: pwd && ls -lisa  
     - name: SetUp  
       run: cd opencascade-7.2.0/build/ && cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug .. && make -j2 install
 #    - uses: actions/checkout@v2
